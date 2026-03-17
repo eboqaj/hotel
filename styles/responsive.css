@@ -1,0 +1,58 @@
+@media (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .nav-links {
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .hero-content h2 {
+        font-size: 2.5rem;
+        letter-spacing: 1px;
+    }
+
+    .hero-content p {
+        font-size: 1.1rem;
+    }
+
+    .about-shell {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .about-copy h2 {
+        font-size: 2.4rem;
+    }
+
+    .about-stats,
+    .about-features,
+    .rooms-grid,
+    .gallery-grid,
+    .amenities-grid,
+    .contact-info,
+    .contact-layout,
+    .form-grid,
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+
+    .about-image-card,
+    .about-image-card img {
+        min-height: 420px;
+    }
+
+    .contact-form {
+        padding: 24px;
+    }
+
+    .about h2,
+    .rooms h2,
+    .gallery h2,
+    .amenities h2,
+    .contact h2 {
+        font-size: 2rem;
+        letter-spacing: 1px;
+    }
+}
