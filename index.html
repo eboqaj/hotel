@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grand Luxury Hotel - Welcome</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <h1 class="logo">Hotel Centrum</h1>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#rooms">Rooms</a></li>
+                    <li><a href="#amenities">Amenities</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero" style="background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url('https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=1200&h=700&fit=crop') center/cover;">
+        <div class="hero-content">
+            <h2>Welcome to Grand Luxury Hotel</h2>
+            <p>Experience Comfort, Elegance, and Exceptional Service</p>
+            <button class="cta-button" onclick="scrollToSection('about')">Learn More</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Our Hotel</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Welcome to Grand Luxury Hotel, where comfort meets elegance. Our hotel has been providing world-class hospitality for over 20 years, serving guests from around the globe.</p>
+                    <p>Located in the heart of the city, we offer stunning views, exceptional service, and a luxurious environment that makes your stay unforgettable.</p>
+                    <ul class="features">
+                        <li>✓ 150+ Spacious Rooms and Suites</li>
+                        <li>✓ 24/7 Customer Service</li>
+                        <li>✓ Prime City Location</li>
+                        <li>✓ Award-Winning Restaurant</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=500&h=600&fit=crop" alt="Hotel Lobby">
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <h3>20+</h3>
+                        <p>Years in Service</p>
+                    </div>
+                    <div class="stat">
+                        <h3>50K+</h3>
+                        <p>Happy Guests</p>
+                    </div>
+                    <div class="stat">
+                        <h3>150+</h3>
+                        <p>Rooms</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rooms Section -->
+    <section id="rooms" class="rooms">
+        <div class="container">
+            <h2>Our Rooms</h2>
+            <div class="rooms-grid">
+                <div class="room-card">
+                    <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=400&h=300&fit=crop" alt="Standard Room" class="room-image">
+                    <h3>Standard Room</h3>
+                    <p class="room-description">Perfect for solo travelers or couples</p>
+                    <ul class="room-amenities">
+                        <li>25 m² Room Size</li>
+                        <li>Queen Bed</li>
+                        <li>Flat-screen TV</li>
+                        <li>Free WiFi</li>
+                    </ul>
+                    <p class="room-price">$99/night</p>
+                </div>
+
+                <div class="room-card">
+                    <img src="https://images.unsplash.com/photo-1611432175969-9b95b72341f1?w=400&h=300&fit=crop" alt="Deluxe Room" class="room-image">
+                    <h3>Deluxe Room</h3>
+                    <p class="room-description">Spacious room with premium amenities</p>
+                    <ul class="room-amenities">
+                        <li>40 m² Room Size</li>
+                        <li>Twin or Queen Beds</li>
+                        <li>Mini Bar</li>
+                        <li>Marble Bathroom</li>
+                    </ul>
+                    <p class="room-price">$159/night</p>
+                </div>
+
+                <div class="room-card">
+                    <img src="https://images.unsplash.com/photo-1578500494198-246f612d03b3?w=400&h=300&fit=crop" alt="Suite" class="room-image">
+                    <h3>Suite</h3>
+                    <p class="room-description">Ultimate luxury experience</p>
+                    <ul class="room-amenities">
+                        <li>60 m² Room Size</li>
+                        <li>Living Area</li>
+                        <li>Luxury Amenities</li>
+                        <li>City View Balcony</li>
+                    </ul>
+                    <p class="room-price">$299/night</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Amenities Section -->
+    <section id="amenities" class="amenities">
+        <div class="container">
+            <h2>Hotel Amenities</h2>
+            <div class="amenities-grid">
+                <div class="amenity-card">
+                    <span class="amenity-icon">🍽️</span>
+                    <h3>Fine Dining Restaurant</h3>
+                    <p>Award-winning cuisine with international and local dishes</p>
+                </div>
+                <div class="amenity-card">
+                    <span class="amenity-icon">🏊</span>
+                    <h3>Swimming Pool</h3>
+                    <p>Olympic-size pool with heated water and poolside bar</p>
+                </div>
+                <div class="amenity-card">
+                    <span class="amenity-icon">💪</span>
+                    <h3>Fitness Center</h3>
+                    <p>State-of-the-art gym with personal training available</p>
+                </div>
+                <div class="amenity-card">
+                    <span class="amenity-icon">🧘</span>
+                    <h3>Spa & Wellness</h3>
+                    <p>Luxurious spa services and wellness treatments</p>
+                </div>
+                <div class="amenity-card">
+                    <span class="amenity-icon">📚</span>
+                    <h3>Business Center</h3>
+                    <p>Fully equipped conference rooms and business facilities</p>
+                </div>
+                <div class="amenity-card">
+                    <span class="amenity-icon">🚗</span>
+                    <h3>Parking</h3>
+                    <p>Complimentary underground parking for all guests</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3>📍 Address</h3>
+                        <p>123 Hotel Street, Downtown<br>City, State 12345<br>Country</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>📞 Phone</h3>
+                        <p>+1 (555) 123-4567<br>Toll Free: 1 (800) 456-7890</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>✉️ Email</h3>
+                        <p>info@grandluxuryhotel.com<br>reservations@grandluxuryhotel.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>🕒 Hours</h3>
+                        <p>Open 24/7 for Reservations<br>Front Desk: 24 Hours</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Grand Luxury Hotel. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a> | 
+                <a href="#">Terms of Service</a> | 
+                <a href="#">Site Map</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,480 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Playfair Display', 'Georgia', serif;
+    line-height: 1.8;
+    color: #4a4a4a;
+    background: #faf8f3;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+/* Navigation */
+.navbar {
+    background: #2c3e50;
+    color: white;
+    padding: 1.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #1a252f;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: normal;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2.5rem;
+}
+
+.nav-links a {
+    color: #ecf0f1;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 400;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+}
+
+.nav-links a:hover {
+    color: #3498db;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), linear-gradient(to bottom, #f5f5f5, #e8e0d5);
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #4a4a4a;
+}
+
+.hero-content h2 {
+    font-size: 4.5rem;
+    margin-bottom: 1.5rem;
+    text-shadow: none;
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 1.2;
+}
+
+.hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: 3rem;
+    text-shadow: none;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: #6a6a6a;
+}
+
+.cta-button {
+    background: transparent;
+    color: #4a4a4a;
+    padding: 15px 40px;
+    border: 2px solid #4a4a4a;
+    border-radius: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: none;
+    letter-spacing: 1px;
+}
+
+.cta-button:hover {
+    transform: none;
+    background: #4a4a4a;
+    color: white;
+    box-shadow: none;
+}
+
+/* About Section */
+.about {
+    padding: 80px 0;
+    background: #ffffff;
+}
+
+.about h2 {
+    text-align: center;
+    font-size: 3.5rem;
+    margin-bottom: 60px;
+    color: #4a4a4a;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: flex-start;
+}
+
+.about-image {
+    grid-column: 2;
+    grid-row: 1 / 4;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.about-stats {
+    grid-column: 1;
+    margin-top: 30px;
+}
+
+.about-text p {
+    margin-bottom: 1.5rem;
+    font-size: 1.05rem;
+    line-height: 2;
+    color: #6a6a6a;
+}
+
+.features {
+    list-style: none;
+    margin-top: 2rem;
+}
+
+.features li {
+    padding: 12px 0;
+    font-size: 1rem;
+    color: #4a4a4a;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.about-stats {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+}
+
+.stat {
+    background: #faf8f3;
+    padding: 40px;
+    text-align: center;
+    border-radius: 0;
+    box-shadow: none;
+    border: 1px solid #e8e0d5;
+    transition: all 0.3s ease;
+}
+
+.stat:hover {
+    transform: none;
+    background: #f5f5f5;
+}
+
+.stat h3 {
+    font-size: 3rem;
+    color: #8b7f6f;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.stat p {
+    color: #6a6a6a;
+    font-size: 1.1rem;
+}
+
+/* Rooms Section */
+.rooms {
+    padding: 80px 0;
+    background: #faf8f3;
+}
+
+.rooms h2 {
+    text-align: center;
+    font-size: 3.5rem;
+    margin-bottom: 60px;
+    color: #4a4a4a;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.rooms-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+}
+
+.room-card {
+    background: white;
+    border-radius: 0;
+    overflow: hidden;
+    box-shadow: none;
+    border: 1px solid #e8e0d5;
+    transition: all 0.3s ease;
+    padding: 0;
+}
+
+.room-card:hover {
+    transform: none;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    border-color: #d0c4b4;
+}
+
+.room-image {
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 0;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    width: 100%;
+}
+
+.room-card h3 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    color: #4a4a4a;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding: 30px 40px 0 40px;
+    margin-top: 0;
+}
+
+.room-description {
+    color: #8b7f6f;
+    margin-bottom: 25px;
+    font-style: italic;
+    font-size: 1rem;
+    padding: 0 40px;
+}
+
+.room-amenities {
+    list-style: none;
+    margin-bottom: 25px;
+    padding: 0 40px;
+}
+
+.room-amenities li {
+    padding: 8px 0;
+    border-bottom: 1px solid #f0f0f0;
+    color: #6a6a6a;
+}
+
+.room-amenities li:last-child {
+    border-bottom: none;
+}
+
+.room-price {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #4a4a4a;
+    text-align: center;
+    margin-top: 25px;
+    padding: 0 40px 40px 40px;
+}
+
+/* Amenities Section */
+.amenities {
+    padding: 80px 0;
+    background: #ffffff;
+}
+
+.amenities h2 {
+    text-align: center;
+    font-size: 3.5rem;
+    margin-bottom: 60px;
+    color: #4a4a4a;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.amenities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 50px;
+}
+
+.amenity-card {
+    background: transparent;
+    padding: 30px;
+    text-align: center;
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.amenity-card:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+.amenity-icon {
+    font-size: 4rem;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.amenity-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: #4a4a4a;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.amenity-card p {
+    color: #8b7f6f;
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+/* Contact Section */
+.contact {
+    padding: 80px 0;
+    background: #faf8f3;
+}
+
+.contact h2 {
+    text-align: center;
+    font-size: 3.5rem;
+    margin-bottom: 60px;
+    color: #4a4a4a;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.contact-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 50px;
+}
+
+.contact-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #4a4a4a;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.contact-item p {
+    color: #8b7f6f;
+    line-height: 1.9;
+    font-size: 1rem;
+}
+
+/* Footer */
+.footer {
+    background: #4a4a4a;
+    color: white;
+    padding: 50px 0 30px;
+    text-align: center;
+    margin-top: 0;
+    font-size: 0.95rem;
+}
+
+.footer-links {
+    margin-top: 20px;
+}
+
+.footer-links a {
+    color: #b8b8b8;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .nav-links {
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .hero-content h2 {
+        font-size: 2.5rem;
+        letter-spacing: 1px;
+    }
+
+    .hero-content p {
+        font-size: 1.1rem;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+
+    .about-image {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    .about-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .rooms-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .amenities-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-info {
+        grid-template-columns: 1fr;
+    }
+
+    .about h2,
+    .rooms h2,
+    .amenities h2,
+    .contact h2 {
+        font-size: 2rem;
+        letter-spacing: 1px;
+    }
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
