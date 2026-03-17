@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grand Luxury Hotel - Welcome</title>
+    <title>Hotel Centrum - Luxury Accommodation in the Heart of the City</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -17,7 +17,7 @@
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#rooms">Rooms</a></li>
-                    <li><a href="#amenities">Amenities</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -25,44 +25,70 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero" style="background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url('https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=1200&h=700&fit=crop') center/cover;">
+    <section id="home" class="hero">
         <div class="hero-content">
-            <h2>Welcome to Grand Luxury Hotel</h2>
-            <p>Experience Comfort, Elegance, and Exceptional Service</p>
-            <button class="cta-button" onclick="scrollToSection('about')">Learn More</button>
+            <h2>Hotel Centrum</h2>
+            <p>Premium Accommodation & Hospitality Excellence</p>
+            <div class="hero-buttons">
+                <button class="cta-button" onclick="scrollToSection('rooms')">View Signature Rooms</button>
+                <button class="cta-button secondary" onclick="scrollToSection('contact')">Contact Concierge</button>
+            </div>
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2>About Our Hotel</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>Welcome to Grand Luxury Hotel, where comfort meets elegance. Our hotel has been providing world-class hospitality for over 20 years, serving guests from around the globe.</p>
-                    <p>Located in the heart of the city, we offer stunning views, exceptional service, and a luxurious environment that makes your stay unforgettable.</p>
-                    <ul class="features">
-                        <li>✓ 150+ Spacious Rooms and Suites</li>
-                        <li>✓ 24/7 Customer Service</li>
-                        <li>✓ Prime City Location</li>
-                        <li>✓ Award-Winning Restaurant</li>
-                    </ul>
-                </div>
-                <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=500&h=600&fit=crop" alt="Hotel Lobby">
-                </div>
-                <div class="about-stats">
-                    <div class="stat">
-                        <h3>20+</h3>
-                        <p>Years in Service</p>
+            <div class="about-shell">
+                <div class="about-copy">
+                    <p class="about-kicker">Luxury Stay, Reimagined</p>
+                    <h2>About Hotel Centrum</h2>
+                    <p class="about-lead">Hotel Centrum blends boutique character with contemporary comfort in the very center of the city, creating a calm and elevated stay for business trips, weekend escapes, and long-awaited celebrations.</p>
+                    <p>For more than two decades, we have welcomed guests with warm service, refined interiors, and thoughtful details that make every arrival feel effortless. From sunrise breakfasts to late-night concierge care, every moment is designed to feel personal.</p>
+                    <div class="about-features">
+                        <div class="feature-card">
+                            <span class="feature-label">Stay</span>
+                            <h3>150+ curated rooms and suites</h3>
+                            <p>Elegant interiors, plush bedding, and city-facing spaces designed for deep rest.</p>
+                        </div>
+                        <div class="feature-card">
+                            <span class="feature-label">Taste</span>
+                            <h3>Signature dining and lounge</h3>
+                            <p>Seasonal menus, crafted cocktails, and a warm social atmosphere from day to night.</p>
+                        </div>
+                        <div class="feature-card">
+                            <span class="feature-label">Wellness</span>
+                            <h3>Spa, fitness, and recovery</h3>
+                            <p>A restorative wellness experience with treatments, movement, and quiet spaces to recharge.</p>
+                        </div>
+                        <div class="feature-card">
+                            <span class="feature-label">Service</span>
+                            <h3>24/7 concierge attention</h3>
+                            <p>Seamless support for reservations, transport, celebrations, and every detail in between.</p>
+                        </div>
                     </div>
-                    <div class="stat">
-                        <h3>50K+</h3>
-                        <p>Happy Guests</p>
+                </div>
+                <div class="about-visual">
+                    <div class="about-image-card">
+                        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=700&h=900&fit=crop" alt="Hotel lobby interior">
+                        <div class="about-badge">
+                            <strong>Premium city address</strong>
+                            <span>Steps from culture, dining, and nightlife</span>
+                        </div>
                     </div>
-                    <div class="stat">
-                        <h3>150+</h3>
-                        <p>Rooms</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>20+</h3>
+                            <p>Years of hospitality</p>
+                        </div>
+                        <div class="stat">
+                            <h3>50K+</h3>
+                            <p>Guests welcomed</p>
+                        </div>
+                        <div class="stat">
+                            <h3>4.9/5</h3>
+                            <p>Average guest rating</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -72,14 +98,15 @@
     <!-- Rooms Section -->
     <section id="rooms" class="rooms">
         <div class="container">
-            <h2>Our Rooms</h2>
+            <h2>Discover Our World-Class Rooms</h2>
+            <p class="section-subtitle">Each room is thoughtfully designed for comfort and elegance</p>
             <div class="rooms-grid">
                 <div class="room-card">
                     <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=400&h=300&fit=crop" alt="Standard Room" class="room-image">
                     <h3>Standard Room</h3>
                     <p class="room-description">Perfect for solo travelers or couples</p>
                     <ul class="room-amenities">
-                        <li>25 m² Room Size</li>
+                        <li>25 mÂ² Room Size</li>
                         <li>Queen Bed</li>
                         <li>Flat-screen TV</li>
                         <li>Free WiFi</li>
@@ -92,7 +119,7 @@
                     <h3>Deluxe Room</h3>
                     <p class="room-description">Spacious room with premium amenities</p>
                     <ul class="room-amenities">
-                        <li>40 m² Room Size</li>
+                        <li>40 mÂ² Room Size</li>
                         <li>Twin or Queen Beds</li>
                         <li>Mini Bar</li>
                         <li>Marble Bathroom</li>
@@ -105,7 +132,7 @@
                     <h3>Suite</h3>
                     <p class="room-description">Ultimate luxury experience</p>
                     <ul class="room-amenities">
-                        <li>60 m² Room Size</li>
+                        <li>60 mÂ² Room Size</li>
                         <li>Living Area</li>
                         <li>Luxury Amenities</li>
                         <li>City View Balcony</li>
@@ -119,35 +146,109 @@
     <!-- Amenities Section -->
     <section id="amenities" class="amenities">
         <div class="container">
+            <h2>Premium Hotel Amenities</h2>
+            <p class="section-subtitle">Experience world-class facilities and services</p>
+            <div class="amenities-grid">
+                <div class="amenity-card">
+                    <img src="https://images.unsplash.com/photo-1567521464027-f127ff144326?w=400&h=300&fit=crop" alt="Fine Dining Restaurant" class="amenity-image">
+                    <h3>Fine Dining Restaurant</h3>
+                    <p>Exquisite culinary creations with international and local specialties</p>
+                </div>
+                <div class="amenity-card">
+                    <img src="https://images.unsplash.com/photo-1576610616656-f72986e2c6fe?w=400&h=300&fit=crop" alt="Swimming Pool" class="amenity-image">
+                    <h3>Olympic-Size Pool</h3>
+                    <p>Heated indoor & outdoor pools with premium poolside amenities</p>
+                </div>
+                <div class="amenity-card">
+                    <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=400&h=300&fit=crop" alt="Fitness Center" class="amenity-image">
+                    <h3>State-of-the-Art Fitness Center</h3>
+                    <p>Modern gym equipment with personal training services available</p>
+                </div>
+                <div class="amenity-card">
+                    <img src="https://images.unsplash.com/photo-1600881333195-2d84cbf0d05b?w=400&h=300&fit=crop" alt="Spa & Wellness" class="amenity-image">
+                    <h3>Luxury Spa & Wellness</h3>
+                    <p>Rejuvenating spa treatments and wellness programs</p>
+                </div>
+                <div class="amenity-card">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop" alt="Business Center" class="amenity-image">
+                    <h3>Business Facilities</h3>
+                    <p>Fully-equipped conference rooms and high-speed internet</p>
+                </div>
+                <div class="amenity-card">
+                    <img src="https://images.unsplash.com/photo-1487958449943-edee28cb67a9?w=400&h=300&fit=crop" alt="Parking" class="amenity-image">
+                    <h3>Premium Parking</h3>
+                    <p>Secure underground parking with valet service</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2>Hotel Gallery</h2>
+            <p class="section-subtitle">Explore the beauty of Hotel Centrum</p>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&h=400&fit=crop" alt="Luxury Lobby">
+                    <h3>Grand Lobby</h3>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=600&h=400&fit=crop" alt="Elegant Room">
+                    <h3>Guest Rooms</h3>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=600&h=400&fit=crop" alt="Restaurant">
+                    <h3>Fine Dining</h3>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1546819802-6f4ee4c00531?w=600&h=400&fit=crop" alt="Rooftop Terrace">
+                    <h3>Rooftop Terrace</h3>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1578500494198-246f612d03b3?w=600&h=400&fit=crop" alt="Suite">
+                    <h3>Premium Suites</h3>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&h=400&fit=crop" alt="Meeting Room">
+                    <h3>Event Spaces</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Old Amenities Section (hidden) -->
+    <section id="amenities" class="amenities" style="display: none;">
+        <div class="container">
             <h2>Hotel Amenities</h2>
             <div class="amenities-grid">
                 <div class="amenity-card">
-                    <span class="amenity-icon">🍽️</span>
+                    <span class="amenity-icon">ðŸ½ï¸</span>
                     <h3>Fine Dining Restaurant</h3>
                     <p>Award-winning cuisine with international and local dishes</p>
                 </div>
                 <div class="amenity-card">
-                    <span class="amenity-icon">🏊</span>
+                    <span class="amenity-icon">ðŸŠ</span>
                     <h3>Swimming Pool</h3>
                     <p>Olympic-size pool with heated water and poolside bar</p>
                 </div>
                 <div class="amenity-card">
-                    <span class="amenity-icon">💪</span>
+                    <span class="amenity-icon">ðŸ’ª</span>
                     <h3>Fitness Center</h3>
                     <p>State-of-the-art gym with personal training available</p>
                 </div>
                 <div class="amenity-card">
-                    <span class="amenity-icon">🧘</span>
+                    <span class="amenity-icon">ðŸ§˜</span>
                     <h3>Spa & Wellness</h3>
                     <p>Luxurious spa services and wellness treatments</p>
                 </div>
                 <div class="amenity-card">
-                    <span class="amenity-icon">📚</span>
+                    <span class="amenity-icon">ðŸ“š</span>
                     <h3>Business Center</h3>
                     <p>Fully equipped conference rooms and business facilities</p>
                 </div>
                 <div class="amenity-card">
-                    <span class="amenity-icon">🚗</span>
+                    <span class="amenity-icon">ðŸš—</span>
                     <h3>Parking</h3>
                     <p>Complimentary underground parking for all guests</p>
                 </div>
@@ -159,25 +260,60 @@
     <section id="contact" class="contact">
         <div class="container">
             <h2>Get In Touch</h2>
-            <div class="contact-content">
+            <p class="section-subtitle">We'd love to hear from you</p>
+            <div class="contact-layout">
                 <div class="contact-info">
                     <div class="contact-item">
-                        <h3>📍 Address</h3>
-                        <p>123 Hotel Street, Downtown<br>City, State 12345<br>Country</p>
+                        <h3>ðŸ“ Address</h3>
+                        <p>456 Centrum Avenue<br>Downtown District<br>Premium City Location</p>
                     </div>
                     <div class="contact-item">
-                        <h3>📞 Phone</h3>
+                        <h3>ðŸ“ž Phone</h3>
                         <p>+1 (555) 123-4567<br>Toll Free: 1 (800) 456-7890</p>
                     </div>
                     <div class="contact-item">
-                        <h3>✉️ Email</h3>
-                        <p>info@grandluxuryhotel.com<br>reservations@grandluxuryhotel.com</p>
+                        <h3>âœ‰ï¸ Email</h3>
+                        <p>info@hotelcentrum.com<br>reservations@hotelcentrum.com</p>
                     </div>
                     <div class="contact-item">
-                        <h3>🕒 Hours</h3>
+                        <h3>ðŸ•’ Hours</h3>
                         <p>Open 24/7 for Reservations<br>Front Desk: 24 Hours</p>
                     </div>
                 </div>
+                <form class="contact-form" id="contact-form">
+                    <div class="contact-form-header">
+                        <p class="contact-form-kicker">Send a Message</p>
+                        <h3>Plan your stay with us</h3>
+                        <p>Tell us what you need and our team will get back to you as soon as possible.</p>
+                    </div>
+                    <div class="form-grid">
+                        <label class="form-field">
+                            <span>Full Name</span>
+                            <input type="text" name="name" placeholder="Your full name" required>
+                        </label>
+                        <label class="form-field">
+                            <span>Email Address</span>
+                            <input type="email" name="email" placeholder="you@example.com" required>
+                        </label>
+                        <label class="form-field">
+                            <span>Phone Number</span>
+                            <input type="tel" name="phone" placeholder="+1 (555) 123-4567">
+                        </label>
+                        <label class="form-field">
+                            <span>Arrival Date</span>
+                            <input type="date" name="arrival">
+                        </label>
+                        <label class="form-field form-field-full">
+                            <span>Message</span>
+                            <textarea name="message" rows="5" placeholder="Tell us about your stay, event, or special request..." required></textarea>
+                        </label>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="contact-submit">Send Inquiry</button>
+                        <p class="form-note">Typical response time: within 24 hours.</p>
+                    </div>
+                    <p class="form-success" id="form-success" hidden>Thanks for reaching out. Your message has been prepared successfully.</p>
+                </form>
             </div>
         </div>
     </section>
@@ -185,14 +321,61 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 Grand Luxury Hotel. All rights reserved.</p>
-            <div class="footer-links">
-                <a href="#">Privacy Policy</a> | 
-                <a href="#">Terms of Service</a> | 
-                <a href="#">Site Map</a>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Hotel Centrum</h4>
+                    <p>Experience luxury hospitality with premium accommodations and world-class service.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#rooms">Rooms</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect With Us</h4>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Hotel Centrum. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a> |
+                    <a href="#">Terms of Service</a> |
+                    <a href="#">Sitemap</a>
+                </div>
             </div>
         </div>
     </footer>
+
+    <!-- Chatbot Widget -->
+    <div id="chatbot" class="chatbot-widget">
+        <div class="chatbot-header">
+            <h3>Prizren Travel AI</h3>
+            <button class="chatbot-close" onclick="toggleChatbot()">Ã—</button>
+        </div>
+        <div class="chatbot-messages" id="chatbot-messages">
+            <div class="message bot-message">
+                <p>Welcome! I'm your Prizren travel assistant. Ask me about hotels, local restaurants, food, landmarks, and the history of Prizren.</p>
+            </div>
+        </div>
+        <div class="chatbot-input-area">
+            <input type="text" id="chatbot-input" placeholder="Ask about hotels, food, or Prizren history..." onkeypress="handleChatInput(event)">
+            <button onclick="sendChatMessage()" class="chatbot-send">Send</button>
+        </div>
+    </div>
+
+    <!-- Chatbot Toggle Button -->
+    <button class="chatbot-toggle" onclick="toggleChatbot()">
+        <span>ðŸ’¬</span>
+    </button>
 
     <script src="script.js"></script>
 </body>
